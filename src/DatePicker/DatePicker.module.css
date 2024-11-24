@@ -1,0 +1,52 @@
+.datePicker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 16px;
+}
+
+.label.medium {
+  font-size: 14px;
+}
+
+.label.small {
+  font-size: 12px;
+}
+
+.dateInputWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.customPlaceholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url('../assets/calendar-days-solid.svg') no-repeat;
+  width: 20px;
+  border-width: thin;
+}
+
+.errorInput {
+  border: 1px solid #dc3545;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 12px;
+}
